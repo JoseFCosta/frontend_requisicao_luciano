@@ -6,7 +6,7 @@ function App() {
 
   const buscarEmpresa = async () => {
     try {
-      const response = await axios.get("http://localhost:1433/empresa/10");
+      const response = await axios.get("https://backend-requisicao-luciano.onrender.com/empresa/10");
       if (response.data.length > 0) {
         setNomeEmpresa(response.data[0].Nome);
       } else {
